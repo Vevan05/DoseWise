@@ -8,7 +8,6 @@
     height: 88vh;
   }
   
-  /* Header */
   .header {
     background: linear-gradient(135deg, #44C59E,#5DCAA9);
     color: white;
@@ -36,7 +35,6 @@
     gap: 15px;
   }
   
-  /* Profile Card */
   .profile-card {
     background: white;
     border-radius: 10px;
@@ -80,7 +78,6 @@
     background: #305a99;
   }
   
-  /* Settings Section */
   .settings {
     background: white;
     border-radius: 10px;
