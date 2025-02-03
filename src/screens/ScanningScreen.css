@@ -1,0 +1,116 @@
+/* App Container */
+.app {
+  min-width: 100%;
+  background: #A8C4C7;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 88vh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #44C59E,#5DCAA9);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Scanner Container */
+.scanner-container {
+  flex: 1;
+  padding: 20px;
+  background: #eef2f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Scanner Box */
+.scan-box {
+  width: 100%;
+  height: 200px;
+  background: white;
+  border-radius: 10px;
+  border: 2px dashed #5DCAA9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.scan-box:hover {
+  transform: scale(1.02);
+}
+
+.scan-icon {
+  font-size: 40px;
+  color: #5DCAA9;
+}
+
+.scan-text {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Scan Button */
+.scan-button {
+  width: 100%;
+  padding: 12px;
+  background: #5DCAA9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.scan-button:hover {
+  background: #5DCAA9;
+}
+
+/* Extra Options */
+.extra-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.option-btn {
+  width: 48%;
+  padding: 10px;
+  background: white;
+  border: 1px solid #5DCAA9;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #5DCAA9;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.option-btn:hover {
+  background: #5DCAA9;
+  color: white;
+}
