@@ -6,13 +6,11 @@ import {Link} from 'react-router-dom';
 function Profile() {
   return (
     <div className="app">
-      {/* Header */}
       <header className="header">
         <h1>Profile</h1>
         <p className="subtitle">Manage your account & settings</p>
       </header>
 
-      {/* Profile Section */}
       <main className="profile-container">
         <div className="profile-card">
           <FaUser className="profile-icon" />
@@ -21,7 +19,6 @@ function Profile() {
           <button className="edit-btn"><FaEdit /> Edit Profile</button>
         </div>
 
-        {/* Settings Section */}
         <div className="settings">
           <div className="setting-item">
             <FaCog className="setting-icon" />
