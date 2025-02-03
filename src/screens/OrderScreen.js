@@ -5,13 +5,11 @@ import { FaUser, FaShoppingCart, FaCapsules, FaCamera, FaBell, FaClipboardList }
 function OrderScreen() {
   return (
     <div className="app">
-      {/* Header */}
       <header className="header">
         <h1>My Orders</h1>
         <p className="subtitle">Track your recent and past orders</p>
       </header>
 
-      {/* Orders List */}
       <main className="orders-container">
         <div className="order-card">
           <FaClipboardList className="order-icon" />
