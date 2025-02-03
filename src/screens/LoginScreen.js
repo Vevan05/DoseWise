@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./LoginScreen.css";
 import { FaUser, FaLock } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; 
 
 function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
+  const navigate = useNavigate(); 
 
   const handleLogin = (e) => {
     e.preventDefault();
     alert("Login clicked! (Add authentication logic here)");
+    navigate("/home");
   };
 
   return (
@@ -45,11 +48,11 @@ function LoginScreen() {
             <a href="#">Forgot Password?</a>
           </div>
 
-          <button type="submit" className="login-btn"><Link to = "/home">Login</Link></button>
+          <button type="submit" className="login-btn">Login</button>
         </form>
 
         <div className="signup-link">
-          <p>Don't have an account? <Link to = "/register">Sign up</Link></p>
+          <p>Don't have an account? <Link to="/register">Sign up</Link></p>
         </div>
       </div>
     </div>
