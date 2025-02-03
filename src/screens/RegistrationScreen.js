@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./RegistrationScreen.css";
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom"; 
 
-import {Link} from 'react-router-dom';
+import "./RegistrationScreen.css";
 
 function RegisterationScreen() {
   const [name, setName] = useState("");
@@ -10,7 +10,9 @@ function RegisterationScreen() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
-                                              
+  
+  const navigate = useNavigate(); 
+
   const handleRegister = (e) => {
     e.preventDefault();
 
@@ -19,7 +21,8 @@ function RegisterationScreen() {
       return;
     }
 
-    alert("Registration successful! (Implement backend logic here)");
+    alert("Registration successful!");
+    navigate("/home"); 
   };
 
   return (
@@ -75,7 +78,7 @@ function RegisterationScreen() {
 
           {error && <p className="error-message">{error}</p>}
 
-          <button type="submit" className="login-btn"><Link to = "/home">Sign Up</Link></button>
+          <button type="submit" className="login-btn">Sign Up</button>
         </form>
 
         <div className="signup-link">
