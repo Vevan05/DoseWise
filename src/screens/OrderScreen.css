@@ -1,5 +1,3 @@
-
-/* App Container */
 .app {
   width: 100%;
   background: #A8C4C7;
@@ -10,7 +8,6 @@
   height: 88vh;
 }
 
-/* Header */
 .header {
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
@@ -28,7 +25,6 @@
   opacity: 0.8;
 }
 
-/* Orders Container */
 .orders-container {
   flex: 1;
   padding: 15px;
@@ -38,7 +34,6 @@
   gap: 12px;
 }
 
-/* Order Card */
 .order-card {
   background: white;
   border-radius: 10px;
