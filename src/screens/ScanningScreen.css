@@ -1,4 +1,3 @@
-/* App Container */
 .app {
   min-width: 100%;
   background: #A8C4C7;
@@ -9,7 +8,6 @@
   height: 88vh;
 }
 
-/* Header */
 .header {
   background: linear-gradient(135deg, #44C59E,#5DCAA9);
   color: white;
@@ -27,7 +25,6 @@
   opacity: 0.8;
 }
 
-/* Scanner Container */
 .scanner-container {
   flex: 1;
   padding: 20px;
@@ -38,7 +35,6 @@
   gap: 15px;
 }
 
-/* Scanner Box */
 .scan-box {
   width: 100%;
   height: 200px;
@@ -68,7 +64,6 @@
   margin-top: 10px;
 }
 
-/* Scan Button */
 .scan-button {
   width: 100%;
   padding: 12px;
@@ -86,7 +81,6 @@
   background: #5DCAA9;
 }
 
-/* Extra Options */
 .extra-options {
   display: flex;
   justify-content: space-between;
